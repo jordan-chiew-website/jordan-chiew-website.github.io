@@ -140,6 +140,7 @@ p{
    filter: blur(20px);
    height: 100vh;
    width: 100vw;
+   top: 0;
    left: 0;
    object-fit: cover;
    opacity: .75;
@@ -155,6 +156,7 @@ p{
    position: fixed;
    height: 100vh;
    width: 100vw;
+   top: 0;
    left: 0;
    object-fit: cover;
    opacity: .5;
