@@ -274,7 +274,7 @@ p{
    opacity: 0;
 }
 
-@media only screen and (max-device-width: 480px){
+@media only screen and (orientation: portrait){
    .sectionHeader{
       font-size: 35px
    }
