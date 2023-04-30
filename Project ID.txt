@@ -1,0 +1,6 @@
+WEB-HCJ-20230423-001
+
+WEB: Type of project
+HCJ: HTML, CSS, JavaScript
+20230423: Date of project birth
+001: N-th project created on that day

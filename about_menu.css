@@ -1,0 +1,29 @@
+#aboutMenu{
+   position: fixed;
+   height: 78vh;
+   width: 78vw;
+   top: 10vh;
+   left: 10vw;
+   background-color: #505050fd;
+   border-radius: 10px;
+   z-index: 5;
+   padding: 1vh 1vw;
+   margin-top: 100vh;
+   transition: .5s all ease-in-out
+}
+
+#aboutMenu .sectionHeader{
+   font-size: 50px;
+}
+
+#aboutMenu p{
+   font-size: 20px
+}
+
+#aboutMenu.show{
+   margin-top: 0vh
+}
+
+#developerSection.hidden{
+   opacity: 0;
+}
