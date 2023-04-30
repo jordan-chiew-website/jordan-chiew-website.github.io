@@ -51,7 +51,17 @@ body{
 #continueButton{
    place-items: center;
    margin-top: 25px;
-   border-radius: 10px
+   border-radius: 10px;
+   background-color: #555;
+   border-color: #00000000;
+}
+
+#continueButton:hover{
+   opacity: .8;
+}
+
+#continueButton:active{
+   opacity: .75;
 }
 
 #header{
@@ -105,11 +115,12 @@ h1{
    display: grid;
    place-items: center;
    left: 0;
-   transition: all .5s ease-in-out
+   transition: all .5s ease-in-out;
 }
 
 .outerContainer.starting{
-   left: 100vw
+   margin-left: 100vw;
+   z-index: -10
 }
 
 .outerContainer.exit{
@@ -123,7 +134,7 @@ h1{
    padding: 10px;
    border: 2px solid #00cc00;
    overflow: auto;
-   transition: .5s all ease-in-out
+   transition: .5s all ease-in-out;
 }
 
 p{
@@ -240,8 +251,8 @@ p{
    height: 30px;
    width: 30px;
    padding: 5px;
-   background-color: #777;
-   border: 2px solid #777;
+   background-color: #707070a0;
+   border: 2px solid #707070a0;
    color: #fff;
    top: 50vh;
    user-select: none;
@@ -282,7 +293,6 @@ p{
    .outerContainer .section{
       margin-top: -20vh;
       height: 77vh;
-      overflow: scroll;
    }
 
    .backgroundImgSection{
@@ -311,13 +321,21 @@ p{
    }
 
    .outerContainer.shrink .section{
+      grid-column-start: 0;
+      grid-column-end: 0;
       background-color: #00000090;
       width: 80vw;
+      margin-right: 5vw;
    }
 
    .outerContainer.shrink2 .section{
       margin-right: 0;
       width: 80vw
+   }
+
+   .outerContainer.shrink2 .section{
+      margin-right: 0;
+      width: 80vw;
    }
 
    #imgSection3.show{
@@ -326,7 +344,9 @@ p{
       top: 50vh;
       left: 10vw;
       z-index: 2;
-      width: 80vw
+      width: 80vw;
+      grid-column-start: 0;
+      grid-column-end: 0;
    }
 
    #imgSection4.show{
